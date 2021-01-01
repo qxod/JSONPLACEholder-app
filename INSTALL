@@ -1,2 +1,6 @@
 
 To install, normally one just needs:
+
+    $ ./configure && make
+
+And optionally,
