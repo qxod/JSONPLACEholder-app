@@ -7,3 +7,4 @@ LDADD = @gstfs_LIBS@
 AUTOMAKE_OPTIONS=foreign
 
 bin_PROGRAMS=gstfs
+gstfs_SOURCES=gstfs.c xcode.c xcode.h

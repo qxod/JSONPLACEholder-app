@@ -1,0 +1,8 @@
+
+GSTFS, a gstreamer-based transcoding FUSE filesystem
+Bob Copeland <me@bobcopeland.com>
+
+Introduction
+~~~~~~~~~~~~
+
+GSTFS is a filesystem for on-demand transcoding of music files between 
