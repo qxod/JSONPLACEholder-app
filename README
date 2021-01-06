@@ -12,3 +12,4 @@ filesystem's only requirement is that the gstreamer pipeline begin with a
 filesrc with the name "_source" and end with an fdsink with the name "_dest".
 The filesystem will automatically substitute the filename and fd number in
 these pipelines.
+
