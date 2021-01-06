@@ -13,3 +13,8 @@ filesrc with the name "_source" and end with an fdsink with the name "_dest".
 The filesystem will automatically substitute the filename and fd number in
 these pipelines.
 
+
+Usage
+~~~~~
+
+The example shell script mp32wav.sh is illustrative (pretend it's all on one 
