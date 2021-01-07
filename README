@@ -22,3 +22,8 @@ line):
 
     #! /bin/sh
     gstfs -d -osrc=$1,src_ext=mp3,dst_ext=wav,\
+	pipeline="filesrc name=\"_source\" ! decodebin ! audioconvert ! \
+	wavenc ! fdsink name=\"_dest\" sync=false" $2
+
+The pipeline loads the mp3 from a file, decodes it, converts it to the proper
+sampling rate, sample size and endianness, and encodes it as a wave file.  
