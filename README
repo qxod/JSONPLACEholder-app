@@ -29,3 +29,7 @@ The pipeline loads the mp3 from a file, decodes it, converts it to the proper
 sampling rate, sample size and endianness, and encodes it as a wave file.  
 gst-launch(1) is a useful program to test pipelines to see if they work (e.g. 
 use alsasink).  The parameters to the script are the music directory 
+containing mp3s, followed by the mount point where wave files will appear.
+
+Once mounted, the first read of a file will transcode it, blocking until 
+transcoding is complete.  The transcoded data is cached in memory for 
