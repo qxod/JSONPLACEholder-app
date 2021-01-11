@@ -33,3 +33,8 @@ containing mp3s, followed by the mount point where wave files will appear.
 
 Once mounted, the first read of a file will transcode it, blocking until 
 transcoding is complete.  The transcoded data is cached in memory for 
+subsequent reads.
+
+
+Mount Options
+~~~~~~~~~~~~~
