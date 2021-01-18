@@ -44,3 +44,6 @@ GSTFS currently recognizes the following mount options:
     src: The source directory of files you want to transcode
     src_ext: Source format file extension
     dst_ext: Target format file extension
+    pipeline: gstreamer conversion pipeline
+    ncache: number of files to cache in memory (default: 50)
+
