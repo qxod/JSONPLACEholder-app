@@ -47,3 +47,9 @@ GSTFS currently recognizes the following mount options:
     pipeline: gstreamer conversion pipeline
     ncache: number of files to cache in memory (default: 50)
 
+
+License
+~~~~~~~
+
+GSTFS is licensed under the LGPL so that it may be used with any set of
+gstreamer plugins.  See the COPYING file for details.
