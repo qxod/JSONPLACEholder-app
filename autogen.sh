@@ -1,3 +1,4 @@
 #!/bin/sh
 aclocal
-autoc
+autoconf
+aut
