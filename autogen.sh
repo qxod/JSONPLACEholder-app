@@ -1,4 +1,4 @@
 #!/bin/sh
 aclocal
 autoconf
-automake --add-missin
+automake --add-missing
