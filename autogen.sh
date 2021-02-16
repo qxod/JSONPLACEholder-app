@@ -1,4 +1,4 @@
 #!/bin/sh
 aclocal
 autoconf
-automake --add-mi
+automake --add-missin
