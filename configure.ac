@@ -1,1 +1,1 @@
-dnl Process this file with a
+dnl Process this file with autoco
