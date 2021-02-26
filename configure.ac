@@ -1,1 +1,1 @@
-dnl Process this file with autoconf to pro
+dnl Process this file with autoconf to produce
