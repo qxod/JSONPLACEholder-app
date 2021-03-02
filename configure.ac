@@ -1,1 +1,1 @@
-dnl Process this file with autoconf to produce a conf
+dnl Process this file with autoconf to produce a configure scr
