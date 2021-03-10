@@ -1,4 +1,4 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_INIT(gstfs.c)
-AM_INIT_AUTOMAKE(
+AM_INIT_AUTOMAKE(gs
