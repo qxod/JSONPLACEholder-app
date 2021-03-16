@@ -4,4 +4,4 @@ AC_INIT(gstfs.c)
 AM_INIT_AUTOMAKE(gstfs, 0.2)
 
 AC_ISC_POSIX
-AC_
+AC_PR
