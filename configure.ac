@@ -8,4 +8,5 @@ AC_PROG_CC
 AM_PROG_CC_STDC
 AC_HEADER_STDC
 
-ACX_PTHREAD(, AC_MSG_ERROR(This program requires POSIX threa
+ACX_PTHREAD(, AC_MSG_ERROR(This program requires POSIX threads))
+PKG_CHE
