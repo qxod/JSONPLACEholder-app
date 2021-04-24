@@ -9,4 +9,4 @@ AM_PROG_CC_STDC
 AC_HEADER_STDC
 
 ACX_PTHREAD(, AC_MSG_ERROR(This program requires POSIX threads))
-PKG_CHECK_MODULES([gstfs
+PKG_CHECK_MODULES([gstfs], 
