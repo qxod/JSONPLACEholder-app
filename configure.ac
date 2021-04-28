@@ -10,4 +10,4 @@ AC_HEADER_STDC
 
 ACX_PTHREAD(, AC_MSG_ERROR(This program requires POSIX threads))
 PKG_CHECK_MODULES([gstfs], [glib-2.0 gstreamer-0.10 fuse])
-AC_DE
+AC_DEFIN
