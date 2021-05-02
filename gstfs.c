@@ -1,0 +1,3 @@
+
+/*
+ *  gstfs - a gstreamer filesystem
