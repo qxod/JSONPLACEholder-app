@@ -13,3 +13,6 @@
 #include <unistd.h>
 #include <fuse.h>
 #include <errno.h>
+#include <glib.h>
+#include <gst/gst.h>
+#include "xcode.h"
