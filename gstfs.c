@@ -21,3 +21,7 @@
 #define max(a,b) ((a)>(b)?(a):(b))
 
 #define GSTFS_OPT_KEY(templ, elem, key) \
+    { templ, offsetof(struct gstfs_mount_info, elem), key }
+
+/* per-mount options and data structures */
+struct gstfs_mount_info
