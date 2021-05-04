@@ -16,3 +16,8 @@
 #include <glib.h>
 #include <gst/gst.h>
 #include "xcode.h"
+
+#define min(a,b) ((a)<(b)?(a):(b))
+#define max(a,b) ((a)>(b)?(a):(b))
+
+#define GSTFS_OPT_KEY(templ, elem, key) \
