@@ -25,3 +25,7 @@
 
 /* per-mount options and data structures */
 struct gstfs_mount_info
+{
+    pthread_mutex_t cache_mutex; /* protects file_cache, cache_lru accesses */
+    GHashTable *file_cache;      /* cache of transcoded audio */
+    GQueue *cache_lru;           /* queue of items in LRU order */
