@@ -29,3 +29,6 @@ struct gstfs_mount_info
     pthread_mutex_t cache_mutex; /* protects file_cache, cache_lru accesses */
     GHashTable *file_cache;      /* cache of transcoded audio */
     GQueue *cache_lru;           /* queue of items in LRU order */
+    int max_cache_entries;       /* max # of entries in the cache */
+    char *src_mnt;               /* directory we are mirroring */
+    char *src_ext;               /* extension of files we transcode */
