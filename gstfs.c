@@ -32,3 +32,8 @@ struct gstfs_mount_info
     int max_cache_entries;       /* max # of entries in the cache */
     char *src_mnt;               /* directory we are mirroring */
     char *src_ext;               /* extension of files we transcode */
+    char *dst_ext;               /* extension of target files */
+    char *pipeline;              /* gstreamer pipeline */
+};
+
+/* This stuff is stored into file_cache by filename */
