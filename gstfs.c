@@ -41,3 +41,7 @@ struct gstfs_file_info
 {
     char *filename;           /* hash key */
     char *src_filename;       /* filename in other mount */
+    pthread_mutex_t mutex;    /* protects this file info */
+    bool passthru;            /* true if this is a file in the mirror */
+    size_t len;               /* size of file */
+    size_t alloc_len;         /* allocated size of buf */
