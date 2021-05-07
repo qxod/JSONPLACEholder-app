@@ -45,3 +45,12 @@ struct gstfs_file_info
     bool passthru;            /* true if this is a file in the mirror */
     size_t len;               /* size of file */
     size_t alloc_len;         /* allocated size of buf */
+    char *buf;                /* completely converted file */
+    GList *list_node;         /* pointer for cache_lru */
+};
+static char *get_source_path(const char *filename);
+
+static struct gstfs_mount_info mount_info;
+
+void usage(const char *prog)
+{
