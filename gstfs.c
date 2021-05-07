@@ -37,3 +37,7 @@ struct gstfs_mount_info
 };
 
 /* This stuff is stored into file_cache by filename */
+struct gstfs_file_info
+{
+    char *filename;           /* hash key */
+    char *src_filename;       /* filename in other mount */
