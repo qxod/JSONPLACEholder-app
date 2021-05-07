@@ -54,3 +54,6 @@ static struct gstfs_mount_info mount_info;
 
 void usage(const char *prog)
 {
+    printf("Usage: %s -o [options] mount_point\n\n"
+           "where options can be:\n"
+           "   src=[source directory]    (required)\n"
