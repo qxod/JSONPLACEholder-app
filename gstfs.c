@@ -57,3 +57,8 @@ void usage(const char *prog)
     printf("Usage: %s -o [options] mount_point\n\n"
            "where options can be:\n"
            "   src=[source directory]    (required)\n"
+           "   src_ext=[mp3|ogg|...]     (required)\n"
+           "   dst_ext=[mp3|ogg|...]     (required)\n"
+           "   pipeline=[gst pipeline]   (required)\n"
+           "   ncache=[0-9]*             (optional)\n",
+           prog);
