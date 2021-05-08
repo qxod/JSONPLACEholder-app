@@ -62,3 +62,10 @@ void usage(const char *prog)
            "   pipeline=[gst pipeline]   (required)\n"
            "   ncache=[0-9]*             (optional)\n",
            prog);
+}
+
+/*
+ *  Create a new gstfs_file_info object using the specified destination file.
+ */
+struct gstfs_file_info *get_file_info(const char *filename)
+{
