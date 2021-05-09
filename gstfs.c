@@ -77,3 +77,10 @@ struct gstfs_file_info *get_file_info(const char *filename)
     fi->src_filename = get_source_path(filename);
     fi->passthru = !is_target_type(filename) ||
                    is_target_type(fi->src_filename);
+
+    if (stat(fi->src_filename, &stbuf) == 0)
+        fi->len = stbuf.st_size;
+
+    pthread_mutex_init(&fi->mutex, NULL);
+    return fi;
+}
