@@ -69,3 +69,7 @@ void usage(const char *prog)
  */
 struct gstfs_file_info *get_file_info(const char *filename)
 {
+    struct gstfs_file_info *fi;
+    struct stat stbuf;
+
+    fi = calloc(1, sizeof(struct gstfs_file_info));
