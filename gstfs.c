@@ -73,3 +73,7 @@ struct gstfs_file_info *get_file_info(const char *filename)
     struct stat stbuf;
 
     fi = calloc(1, sizeof(struct gstfs_file_info));
+    fi->filename = g_strdup(filename);
+    fi->src_filename = get_source_path(filename);
+    fi->passthru = !is_target_type(filename) ||
+                   is_target_type(fi->src_filename);
