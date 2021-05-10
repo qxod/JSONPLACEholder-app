@@ -84,3 +84,8 @@ struct gstfs_file_info *get_file_info(const char *filename)
     pthread_mutex_init(&fi->mutex, NULL);
     return fi;
 }
+
+/*
+ *  Release a previously allocated gstfs_file_info object.
+ */
+void put_file_info(struct gstfs_file_info *fi)
