@@ -98,3 +98,10 @@ void put_file_info(struct gstfs_file_info *fi)
 /*
  *  Given a filename with extension "search", return a possibly reallocated
  *  string with "replace" on the end.
+ */
+char *replace_ext(char *filename, char *search, char *replace)
+{
+    char *ext = strrchr(filename, '.');
+    if (ext && strcmp(ext+1, search) == 0) 
+    {
+        *(ext+1) = 0;
