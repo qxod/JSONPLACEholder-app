@@ -96,3 +96,5 @@ void put_file_info(struct gstfs_file_info *fi)
 }
 
 /*
+ *  Given a filename with extension "search", return a possibly reallocated
+ *  string with "replace" on the end.
