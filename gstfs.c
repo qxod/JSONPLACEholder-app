@@ -89,3 +89,10 @@ struct gstfs_file_info *get_file_info(const char *filename)
  *  Release a previously allocated gstfs_file_info object.
  */
 void put_file_info(struct gstfs_file_info *fi)
+{
+    g_free(fi->filename);
+    g_free(fi->src_filename);
+    free(fi);
+}
+
+/*
