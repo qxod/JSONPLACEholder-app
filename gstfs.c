@@ -118,3 +118,8 @@ int is_target_type(const char *filename)
     char *ext = strrchr(filename, '.');
     return (ext && strcmp(ext+1, mount_info.dst_ext) == 0);
 }
+
+/*
+ *  Return true if filename exists in the original dir.
+ */
+bool exists_in_mirror(const char *filename)
