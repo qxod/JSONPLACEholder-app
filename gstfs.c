@@ -105,3 +105,5 @@ char *replace_ext(char *filename, char *search, char *replace)
     if (ext && strcmp(ext+1, search) == 0) 
     {
         *(ext+1) = 0;
+        filename = g_strconcat(filename, replace, NULL);
+    }
