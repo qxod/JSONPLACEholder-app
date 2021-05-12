@@ -107,3 +107,8 @@ char *replace_ext(char *filename, char *search, char *replace)
         *(ext+1) = 0;
         filename = g_strconcat(filename, replace, NULL);
     }
+    return filename;
+}
+
+/*
+ *  Return true if filename has extension dst_ext.
