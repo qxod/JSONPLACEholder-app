@@ -112,3 +112,9 @@ char *replace_ext(char *filename, char *search, char *replace)
 
 /*
  *  Return true if filename has extension dst_ext.
+ */
+int is_target_type(const char *filename)
+{
+    char *ext = strrchr(filename, '.');
+    return (ext && strcmp(ext+1, mount_info.dst_ext) == 0);
+}
