@@ -123,3 +123,8 @@ int is_target_type(const char *filename)
  *  Return true if filename exists in the original dir.
  */
 bool exists_in_mirror(const char *filename)
+{
+    int result;
+    struct statvfs buf;
+
+    result = gstfs_statfs(filename, &buf);
