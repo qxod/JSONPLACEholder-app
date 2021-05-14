@@ -128,3 +128,5 @@ bool exists_in_mirror(const char *filename)
     struct statvfs buf;
 
     result = gstfs_statfs(filename, &buf);
+    return result == 0;
+}
