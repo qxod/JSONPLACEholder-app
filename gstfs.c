@@ -130,3 +130,9 @@ bool exists_in_mirror(const char *filename)
     result = gstfs_statfs(filename, &buf);
     return result == 0;
 }
+
+/*  
+ *  Remove items from the file cache until below the maximum.
+ *  This is relatively quick since we can find elements by looking at the
+ *  head of the lru list and then do a single hash lookup to remove from 
+ *  the hash table.
