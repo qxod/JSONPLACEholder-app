@@ -136,3 +136,8 @@ bool exists_in_mirror(const char *filename)
  *  This is relatively quick since we can find elements by looking at the
  *  head of the lru list and then do a single hash lookup to remove from 
  *  the hash table.
+ *
+ *  Called with cache_mutex held.
+ */
+static void expire_cache()
+{
