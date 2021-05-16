@@ -141,3 +141,8 @@ bool exists_in_mirror(const char *filename)
  */
 static void expire_cache()
 {
+    struct gstfs_file_info *fi;
+
+    while (g_queue_get_length(mount_info.cache_lru) > 
+           mount_info.max_cache_entries)
+    {
