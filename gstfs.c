@@ -161,3 +161,11 @@ static void expire_cache()
 static struct gstfs_file_info *gstfs_lookup(const char *path)
 {
     struct gstfs_file_info *ret;
+
+    if (!is_target_type(path) && !exists_in_mirror(path))
+        return NULL;
+
+    pthread_mutex_lock(&mount_info.cache_mutex);
+    ret = g_hash_table_lookup(mount_info.file_cache, path);
+    if (!ret)
+    {
