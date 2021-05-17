@@ -146,3 +146,11 @@ static void expire_cache()
     while (g_queue_get_length(mount_info.cache_lru) > 
            mount_info.max_cache_entries)
     {
+        fi = (struct gstfs_file_info *) g_queue_pop_head(mount_info.cache_lru);
+        g_hash_table_remove(mount_info.file_cache, fi);
+        put_file_info(fi);
+    }
+}
+
+/*
+ *  If the path represents a file in the mirror filesystem, then
