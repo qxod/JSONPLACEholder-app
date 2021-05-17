@@ -169,3 +169,8 @@ static struct gstfs_file_info *gstfs_lookup(const char *path)
     ret = g_hash_table_lookup(mount_info.file_cache, path);
     if (!ret)
     {
+        ret = get_file_info(path);
+        if (!ret)
+            goto out;
+
+        g_hash_table_replace(mount_info.file_cache, ret->filename, ret);
