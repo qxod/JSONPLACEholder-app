@@ -154,3 +154,10 @@ static void expire_cache()
 
 /*
  *  If the path represents a file in the mirror filesystem, then
+ *  look for it in the cache.  If not, create a new file info.
+ *
+ *  If it isn't a mirror file, return NULL.
+ */
+static struct gstfs_file_info *gstfs_lookup(const char *path)
+{
+    struct gstfs_file_info *ret;
