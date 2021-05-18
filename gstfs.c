@@ -182,3 +182,10 @@ static struct gstfs_file_info *gstfs_lookup(const char *path)
 
     g_queue_push_tail(mount_info.cache_lru, ret);
     ret->list_node = mount_info.cache_lru->tail;
+
+    expire_cache();
+
+out:
+    pthread_mutex_unlock(&mount_info.cache_mutex);
+    return ret;
+}
