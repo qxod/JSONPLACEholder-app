@@ -177,3 +177,8 @@ static struct gstfs_file_info *gstfs_lookup(const char *path)
     }
 
     // move to end of LRU
+    if (ret->list_node)
+        g_queue_unlink(mount_info.cache_lru, ret->list_node);
+
+    g_queue_push_tail(mount_info.cache_lru, ret);
+    ret->list_node = mount_info.cache_lru->tail;
