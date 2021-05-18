@@ -189,3 +189,8 @@ out:
     pthread_mutex_unlock(&mount_info.cache_mutex);
     return ret;
 }
+
+/*
+ *  Given a filename from the fuse mount, return the corresponding filename 
+ *  in the mirror.
+ */
