@@ -174,3 +174,6 @@ static struct gstfs_file_info *gstfs_lookup(const char *path)
             goto out;
 
         g_hash_table_replace(mount_info.file_cache, ret->filename, ret);
+    }
+
+    // move to end of LRU
