@@ -194,3 +194,9 @@ out:
  *  Given a filename from the fuse mount, return the corresponding filename 
  *  in the mirror.
  */
+static char *get_source_path(const char *filename)
+{
+    struct stat buf;
+    char *source;
+
+    source = g_strdup_printf("%s%s", mount_info.src_mnt, filename);
