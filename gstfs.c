@@ -206,3 +206,5 @@ static char *get_source_path(const char *filename)
         return source;
 
     source = replace_ext(source, mount_info.dst_ext, mount_info.src_ext);
+    return source;
+}
