@@ -200,3 +200,9 @@ static char *get_source_path(const char *filename)
     char *source;
 
     source = g_strdup_printf("%s%s", mount_info.src_mnt, filename);
+
+    /* if target file already exists in source, then don't transcode */
+    if (stat(source, &buf) == 0)
+        return source;
+
+    source = replace_ext(source, mount_info.dst_ext, mount_info.src_ext);
