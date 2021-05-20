@@ -216,3 +216,5 @@ static char *canonize(const char *cwd, const char *filename)
     else
         return g_strdup_printf("%s/%s", cwd, filename);
 }
+
+int gstfs_statfs(const char *path, struct statvfs *buf)
