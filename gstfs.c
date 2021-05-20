@@ -211,3 +211,8 @@ static char *get_source_path(const char *filename)
 
 static char *canonize(const char *cwd, const char *filename)
 {
+    if (filename[0] == '/')
+        return g_strdup(filename);
+    else
+        return g_strdup_printf("%s/%s", cwd, filename);
+}
