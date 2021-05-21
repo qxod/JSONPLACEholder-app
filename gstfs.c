@@ -224,3 +224,7 @@ int gstfs_statfs(const char *path, struct statvfs *buf)
     source_path = get_source_path(path);
     if (statvfs(source_path, buf))
         return -errno;
+
+    g_free(source_path);
+    return 0;
+}
