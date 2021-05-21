@@ -218,3 +218,9 @@ static char *canonize(const char *cwd, const char *filename)
 }
 
 int gstfs_statfs(const char *path, struct statvfs *buf)
+{
+    char *source_path;
+
+    source_path = get_source_path(path);
+    if (statvfs(source_path, buf))
+        return -errno;
