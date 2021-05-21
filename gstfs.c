@@ -231,3 +231,6 @@ int gstfs_statfs(const char *path, struct statvfs *buf)
 
 int gstfs_getattr(const char *path, struct stat *stbuf)
 {
+    int ret = 0;
+    char *source_path;
+    struct gstfs_file_info *converted;
