@@ -228,3 +228,6 @@ int gstfs_statfs(const char *path, struct statvfs *buf)
     g_free(source_path);
     return 0;
 }
+
+int gstfs_getattr(const char *path, struct stat *stbuf)
+{
