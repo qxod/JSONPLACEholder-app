@@ -249,3 +249,7 @@ int gstfs_getattr(const char *path, struct stat *stbuf)
 static int read_cb(char *buf, size_t size, void *data)
 {
     struct gstfs_file_info *info = (struct gstfs_file_info *) data;
+
+    size_t newsz = info->len + size;
+   
+    if (info->alloc_len < newsz)
