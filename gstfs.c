@@ -239,3 +239,13 @@ int gstfs_getattr(const char *path, struct stat *stbuf)
 
     if (stat(source_path, stbuf))
         ret = -errno;
+    else if ((converted = gstfs_lookup(path)))
+        stbuf->st_size = converted->len;
+
+    g_free(source_path);
+    return ret;
+}
+
+static int read_cb(char *buf, size_t size, void *data)
+{
+    struct gstfs_file_info *info = (struct gstfs_file_info *) data;
