@@ -234,3 +234,8 @@ int gstfs_getattr(const char *path, struct stat *stbuf)
     int ret = 0;
     char *source_path;
     struct gstfs_file_info *converted;
+
+    source_path = get_source_path(path);
+
+    if (stat(source_path, stbuf))
+        ret = -errno;
