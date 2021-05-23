@@ -253,3 +253,7 @@ static int read_cb(char *buf, size_t size, void *data)
     size_t newsz = info->len + size;
    
     if (info->alloc_len < newsz)
+    {
+        info->alloc_len = max(info->alloc_len * 2, newsz);
+        info->buf = realloc(info->buf, info->alloc_len);
+        if (!info->buf)
