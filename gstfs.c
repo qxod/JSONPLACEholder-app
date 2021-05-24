@@ -257,3 +257,10 @@ static int read_cb(char *buf, size_t size, void *data)
         info->alloc_len = max(info->alloc_len * 2, newsz);
         info->buf = realloc(info->buf, info->alloc_len);
         if (!info->buf)
+            return -ENOMEM;
+    }
+
+    memcpy(&info->buf[info->len], buf, size);
+    info->len += size;
+    return 0;
+}
