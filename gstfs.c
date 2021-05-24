@@ -264,3 +264,10 @@ static int read_cb(char *buf, size_t size, void *data)
     info->len += size;
     return 0;
 }
+
+int gstfs_read_passthru(const char *path, char *buf, size_t size, off_t offset)
+{
+    size_t count;
+    int fd = open(path, O_RDONLY);
+
+    lseek(fd, offset, SEEK_SET);
