@@ -271,3 +271,7 @@ int gstfs_read_passthru(const char *path, char *buf, size_t size, off_t offset)
     int fd = open(path, O_RDONLY);
 
     lseek(fd, offset, SEEK_SET);
+    count = read(fd, buf, size);
+    close(fd);
+    return count;
+}
