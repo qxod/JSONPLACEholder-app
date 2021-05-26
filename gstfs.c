@@ -281,3 +281,6 @@ int gstfs_read(const char *path, char *buf, size_t size, off_t offset,
 {
     struct gstfs_file_info *info = gstfs_lookup(path);
     size_t count = 0;
+
+    if (!info)
+        return -ENOENT;
