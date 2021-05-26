@@ -284,3 +284,6 @@ int gstfs_read(const char *path, char *buf, size_t size, off_t offset,
 
     if (!info)
         return -ENOENT;
+
+    pthread_mutex_lock(&info->mutex);
+    if (info->passthru)
