@@ -275,3 +275,9 @@ int gstfs_read_passthru(const char *path, char *buf, size_t size, off_t offset)
     close(fd);
     return count;
 }
+
+int gstfs_read(const char *path, char *buf, size_t size, off_t offset, 
+    struct fuse_file_info *fi)
+{
+    struct gstfs_file_info *info = gstfs_lookup(path);
+    size_t count = 0;
