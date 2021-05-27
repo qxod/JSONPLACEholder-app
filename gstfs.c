@@ -287,3 +287,10 @@ int gstfs_read(const char *path, char *buf, size_t size, off_t offset,
 
     pthread_mutex_lock(&info->mutex);
     if (info->passthru)
+        return gstfs_read_passthru(info->src_filename, buf, size, offset);
+
+    if (!info->buf)
+        transcode(mount_info.pipeline, info->src_filename, read_cb, info);
+    
+    if (info->len <= offset)
+        goto out;
