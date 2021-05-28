@@ -298,3 +298,5 @@ int gstfs_read(const char *path, char *buf, size_t size, off_t offset,
     count = min(info->len - offset, size);
 
     memcpy(buf, &info->buf[offset], count);
+
+out:
