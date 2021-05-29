@@ -305,3 +305,13 @@ out:
 }
 
 int gstfs_open(const char *path, struct fuse_file_info *fi)
+{
+    struct gstfs_file_info *info = gstfs_lookup(path);
+    if (!info)
+        return -ENOENT;
+
+    return 0;
+}
+
+/*
+ *  Copy all entries from source mount, replacing extensions along the way.
