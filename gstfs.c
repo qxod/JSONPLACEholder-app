@@ -300,3 +300,8 @@ int gstfs_read(const char *path, char *buf, size_t size, off_t offset,
     memcpy(buf, &info->buf[offset], count);
 
 out:
+    pthread_mutex_unlock(&info->mutex);
+    return count;
+}
+
+int gstfs_open(const char *path, struct fuse_file_info *fi)
