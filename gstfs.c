@@ -315,3 +315,6 @@ int gstfs_open(const char *path, struct fuse_file_info *fi)
 
 /*
  *  Copy all entries from source mount, replacing extensions along the way.
+ */
+int gstfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
+    off_t offset, struct fuse_file_info *fi)
