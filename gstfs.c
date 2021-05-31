@@ -318,3 +318,10 @@ int gstfs_open(const char *path, struct fuse_file_info *fi)
  */
 int gstfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
     off_t offset, struct fuse_file_info *fi)
+{
+    struct dirent *dirent;
+    DIR *dir;
+    char *source_path;
+
+    source_path = get_source_path(path);
+    dir = opendir(source_path);
