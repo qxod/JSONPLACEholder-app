@@ -325,3 +325,8 @@ int gstfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 
     source_path = get_source_path(path);
     dir = opendir(source_path);
+
+    if (!dir)
+        return -ENOENT;
+
+    while ((dirent = readdir(dir)))
