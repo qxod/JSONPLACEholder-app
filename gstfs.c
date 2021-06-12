@@ -338,3 +338,11 @@ int gstfs_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
         g_free(s);
     }
     closedir(dir);
+
+    return 0;
+}
+
+static struct fuse_operations gstfs_opers = {
+    .readdir = gstfs_readdir,
+    .statfs = gstfs_statfs,
+    .getattr = gstfs_getattr,
