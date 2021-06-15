@@ -351,3 +351,8 @@ static struct fuse_operations gstfs_opers = {
 };
 
 static struct fuse_opt gstfs_opts[] = {
+    GSTFS_OPT_KEY("src=%s", src_mnt, 0),
+    GSTFS_OPT_KEY("src_ext=%s", src_ext, 0),
+    GSTFS_OPT_KEY("dst_ext=%s", dst_ext, 0),
+    GSTFS_OPT_KEY("ncache=%d", max_cache_entries, 0),
+    GSTFS_OPT_KEY("pipeline=%s", pipeline, 0),
