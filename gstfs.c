@@ -346,3 +346,8 @@ static struct fuse_operations gstfs_opers = {
     .readdir = gstfs_readdir,
     .statfs = gstfs_statfs,
     .getattr = gstfs_getattr,
+    .open = gstfs_open,
+    .read = gstfs_read
+};
+
+static struct fuse_opt gstfs_opts[] = {
