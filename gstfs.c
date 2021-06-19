@@ -356,3 +356,11 @@ static struct fuse_opt gstfs_opts[] = {
     GSTFS_OPT_KEY("dst_ext=%s", dst_ext, 0),
     GSTFS_OPT_KEY("ncache=%d", max_cache_entries, 0),
     GSTFS_OPT_KEY("pipeline=%s", pipeline, 0),
+    FUSE_OPT_END
+};
+
+
+int main(int argc, char *argv[])
+{
+    char pwd[2048];
+    struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
