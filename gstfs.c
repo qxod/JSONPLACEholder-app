@@ -364,3 +364,6 @@ int main(int argc, char *argv[])
 {
     char pwd[2048];
     struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
+
+    if (fuse_opt_parse(&args, &mount_info, gstfs_opts, NULL) == -1)
+        return -1;
