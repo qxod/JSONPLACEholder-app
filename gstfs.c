@@ -367,3 +367,8 @@ int main(int argc, char *argv[])
 
     if (fuse_opt_parse(&args, &mount_info, gstfs_opts, NULL) == -1)
         return -1;
+
+    if (!mount_info.src_mnt ||
+        !mount_info.src_ext ||
+        !mount_info.dst_ext ||
+        !mount_info.pipeline)
