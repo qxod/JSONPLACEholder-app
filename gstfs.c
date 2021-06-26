@@ -372,3 +372,7 @@ int main(int argc, char *argv[])
         !mount_info.src_ext ||
         !mount_info.dst_ext ||
         !mount_info.pipeline)
+    {
+        usage(argv[0]);
+        return -1;
+    }
