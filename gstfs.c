@@ -376,3 +376,9 @@ int main(int argc, char *argv[])
         usage(argv[0]);
         return -1;
     }
+
+    if (!getcwd(pwd, sizeof(pwd)))
+    {
+        perror("gstfs");
+        return -1;
+    }
