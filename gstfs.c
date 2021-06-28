@@ -382,3 +382,10 @@ int main(int argc, char *argv[])
         perror("gstfs");
         return -1;
     }
+
+    mount_info.src_mnt = canonize(pwd, mount_info.src_mnt);
+
+    if (mount_info.max_cache_entries == 0)
+        mount_info.max_cache_entries = 50;
+
+    pthread_mutex_init(&mount_info.cache_mutex, NULL);
