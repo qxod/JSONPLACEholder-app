@@ -391,3 +391,7 @@ int main(int argc, char *argv[])
     pthread_mutex_init(&mount_info.cache_mutex, NULL);
     mount_info.file_cache = g_hash_table_new(g_str_hash, g_str_equal);
     mount_info.cache_lru = g_queue_new();
+
+    gst_init(&argc, &argv);
+    return fuse_main(args.argc, args.argv, &gstfs_opers, NULL);
+}
