@@ -1,2 +1,2 @@
 #! /bin/sh
-./gstfs -
+./gstfs -d -o
