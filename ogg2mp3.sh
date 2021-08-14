@@ -1,2 +1,2 @@
 #! /bin/sh
-./gstfs -f -
+./gstfs -f -osrc
