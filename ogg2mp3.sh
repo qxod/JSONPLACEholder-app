@@ -1,2 +1,2 @@
 #! /bin/sh
-./gstfs -f -osrc
+./gstfs -f -osrc=$1,
