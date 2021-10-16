@@ -1,2 +1,2 @@
 /*
- * gstfs - gstre
+ * gstfs - gstreamer glu
