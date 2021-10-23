@@ -1,2 +1,2 @@
 /*
- * gstfs - gstreamer glue rout
+ * gstfs - gstreamer glue routines fo
