@@ -1,2 +1,2 @@
 /*
- * gstfs - gstreamer glue routines fo
+ * gstfs - gstreamer glue routines for tran
