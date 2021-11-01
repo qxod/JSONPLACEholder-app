@@ -2,4 +2,4 @@
  * gstfs - gstreamer glue routines for transcoding
  */
 
-#include <gst/g
+#include <gst/gst.h
