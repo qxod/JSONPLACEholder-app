@@ -3,4 +3,4 @@
  */
 
 #include <gst/gst.h>
-#inclu
+#include <glib
