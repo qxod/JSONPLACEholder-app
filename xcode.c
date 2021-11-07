@@ -3,4 +3,5 @@
  */
 
 #include <gst/gst.h>
-#include <glib
+#include <glib.h>
+#inc
