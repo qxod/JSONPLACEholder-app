@@ -5,4 +5,5 @@
 #include <gst/gst.h>
 #include <glib.h>
 #include <unistd.h>
-#include <sys/wait.h
+#include <sys/wait.h>
+#i
