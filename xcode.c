@@ -8,4 +8,4 @@
 #include <sys/wait.h>
 #include <pthread.h>
 
-st
+struct 
