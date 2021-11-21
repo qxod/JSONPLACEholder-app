@@ -6,4 +6,6 @@
 #include <glib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include <pthread.h
+#include <pthread.h>
+
+st
