@@ -9,3 +9,5 @@
 #include <pthread.h>
 
 struct pipe_params
+{
+ 
