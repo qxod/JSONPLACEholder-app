@@ -10,4 +10,5 @@
 
 struct pipe_params
 {
-    i
+    int fd;
+  
