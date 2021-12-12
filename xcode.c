@@ -11,4 +11,4 @@
 struct pipe_params
 {
     int fd;
-    void (*add_data_cb)(char *, 
+    void (*add_data_cb)(char *, size
