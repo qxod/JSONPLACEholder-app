@@ -17,4 +17,4 @@ struct pipe_params
 
 void *send_pipe(void *data)
 {
-    stru
+    struct pipe
