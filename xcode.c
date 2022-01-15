@@ -17,4 +17,4 @@ struct pipe_params
 
 void *send_pipe(void *data)
 {
-    struct pipe_params *param = (struct pipe_
+    struct pipe_params *param = (struct pipe_par
