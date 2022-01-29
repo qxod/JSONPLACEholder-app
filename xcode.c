@@ -19,4 +19,4 @@ void *send_pipe(void *data)
 {
     struct pipe_params *param = (struct pipe_params *) data;
     char buf[PIPE_BUF];
-    size_t 
+    size_t si
