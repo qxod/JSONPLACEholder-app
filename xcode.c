@@ -21,4 +21,4 @@ void *send_pipe(void *data)
     char buf[PIPE_BUF];
     size_t sizeread;
     
-    while ((sizeread = read(para
+    while ((sizeread = read(param-
