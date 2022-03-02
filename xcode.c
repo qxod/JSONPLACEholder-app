@@ -22,4 +22,4 @@ void *send_pipe(void *data)
     size_t sizeread;
     
     while ((sizeread = read(param->fd, buf, sizeof(buf))) > 0)
-  
+    {
