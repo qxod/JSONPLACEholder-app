@@ -23,3 +23,4 @@ void *send_pipe(void *data)
     
     while ((sizeread = read(param->fd, buf, sizeof(buf))) > 0)
     {
+    
