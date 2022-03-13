@@ -23,4 +23,5 @@ void *send_pipe(void *data)
     
     while ((sizeread = read(param->fd, buf, sizeof(buf))) > 0)
     {
-        param->add_data_cb(buf, sizeread, param->user_data
+        param->add_data_cb(buf, sizeread, param->user_data);
+  
