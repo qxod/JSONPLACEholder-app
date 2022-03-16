@@ -26,3 +26,5 @@ void *send_pipe(void *data)
         param->add_data_cb(buf, sizeread, param->user_data);
     }
     return NULL;
+}
+
