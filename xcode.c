@@ -29,4 +29,4 @@ void *send_pipe(void *data)
 }
 
 /*
- *  Transc
+ *  Transcodes a fi
