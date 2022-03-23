@@ -29,4 +29,4 @@ void *send_pipe(void *data)
 }
 
 /*
- *  Transcodes a file into a
+ *  Transcodes a file into a buff
