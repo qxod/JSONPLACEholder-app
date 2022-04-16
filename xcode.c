@@ -31,4 +31,4 @@ void *send_pipe(void *data)
 /*
  *  Transcodes a file into a buffer, blocking until done.
  */
-int transcode(char *pipeli
+int transcode(char *pipeline_str
