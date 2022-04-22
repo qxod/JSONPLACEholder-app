@@ -32,4 +32,4 @@ void *send_pipe(void *data)
  *  Transcodes a file into a buffer, blocking until done.
  */
 int transcode(char *pipeline_str, char *filename, 
-    void (*add_data_cb)(char *, size_t, void *), void 
+    void (*add_data_cb)(char *, size_t, void *), void *use
