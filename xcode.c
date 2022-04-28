@@ -35,4 +35,4 @@ int transcode(char *pipeline_str, char *filename,
     void (*add_data_cb)(char *, size_t, void *), void *user_data)
 {
     GstElement *pipeline, *source, *dest;
-    GError *e
+    GError *error =
