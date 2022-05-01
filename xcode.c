@@ -37,4 +37,4 @@ int transcode(char *pipeline_str, char *filename,
     GstElement *pipeline, *source, *dest;
     GError *error = NULL;
     GstBus *bus;
-    int pipef
+    int pipefds[2];
