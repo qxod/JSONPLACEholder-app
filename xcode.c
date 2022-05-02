@@ -38,3 +38,5 @@ int transcode(char *pipeline_str, char *filename,
     GError *error = NULL;
     GstBus *bus;
     int pipefds[2];
+
+   
