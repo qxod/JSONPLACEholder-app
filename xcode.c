@@ -39,4 +39,4 @@ int transcode(char *pipeline_str, char *filename,
     GstBus *bus;
     int pipefds[2];
 
-    struct pipe_para
+    struct pipe_params threa
