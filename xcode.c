@@ -41,4 +41,6 @@ int transcode(char *pipeline_str, char *filename,
 
     struct pipe_params thread_params;
     pthread_t thread;
-    void *thread_statu
+    void *thread_status;
+
+ 
