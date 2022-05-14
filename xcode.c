@@ -43,4 +43,4 @@ int transcode(char *pipeline_str, char *filename,
     pthread_t thread;
     void *thread_status;
 
-    pipeline = gst_parse_launch(pipeline_str, &e
+    pipeline = gst_parse_launch(pipeline_str, &erro
