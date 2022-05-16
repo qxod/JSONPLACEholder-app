@@ -46,3 +46,4 @@ int transcode(char *pipeline_str, char *filename,
     pipeline = gst_parse_launch(pipeline_str, &error);
     if (error)
     {
+    
