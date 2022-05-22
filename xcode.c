@@ -46,4 +46,4 @@ int transcode(char *pipeline_str, char *filename,
     pipeline = gst_parse_launch(pipeline_str, &error);
     if (error)
     {
-        fprintf(stderr, "Error parsing pipeline: %s\n", error->mes
+        fprintf(stderr, "Error parsing pipeline: %s\n", error->messag
