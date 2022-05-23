@@ -47,4 +47,4 @@ int transcode(char *pipeline_str, char *filename,
     if (error)
     {
         fprintf(stderr, "Error parsing pipeline: %s\n", error->message);
-        ret
+        return -1;
