@@ -50,4 +50,4 @@ int transcode(char *pipeline_str, char *filename,
         return -1;
     }
 
-    source =
+    source = gs
