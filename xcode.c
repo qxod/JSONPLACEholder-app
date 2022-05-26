@@ -50,4 +50,4 @@ int transcode(char *pipeline_str, char *filename,
         return -1;
     }
 
-    source = gst_bi
+    source = gst_bin_ge
