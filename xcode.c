@@ -50,4 +50,4 @@ int transcode(char *pipeline_str, char *filename,
         return -1;
     }
 
-    source = gst_bin_get_by_na
+    source = gst_bin_get_by_name(G
