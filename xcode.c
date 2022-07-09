@@ -54,4 +54,4 @@ int transcode(char *pipeline_str, char *filename,
     dest = gst_bin_get_by_name(GST_BIN(pipeline), "_dest");
 
     if (!pipeline || !source || !dest) 
-   
+    {
