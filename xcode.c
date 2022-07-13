@@ -55,4 +55,4 @@ int transcode(char *pipeline_str, char *filename,
 
     if (!pipeline || !source || !dest) 
     {
-        fprintf(stderr, "Co
+        fprintf(stderr, "Could
