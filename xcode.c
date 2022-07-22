@@ -56,4 +56,4 @@ int transcode(char *pipeline_str, char *filename,
     if (!pipeline || !source || !dest) 
     {
         fprintf(stderr, "Could not initialize pipeline\n");
-        ret
+        return 
