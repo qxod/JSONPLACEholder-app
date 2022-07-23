@@ -59,4 +59,4 @@ int transcode(char *pipeline_str, char *filename,
         return -2;
     }
 
-    i
+    if (p
