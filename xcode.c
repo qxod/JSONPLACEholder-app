@@ -57,3 +57,5 @@ int transcode(char *pipeline_str, char *filename,
     {
         fprintf(stderr, "Could not initialize pipeline\n");
         return -2;
+    }
+
