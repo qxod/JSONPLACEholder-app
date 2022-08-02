@@ -61,4 +61,5 @@ int transcode(char *pipeline_str, char *filename,
 
     if (pipe(pipefds))
     {
-        perror("gstfs")
+        perror("gstfs");
+   
