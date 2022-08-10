@@ -63,4 +63,6 @@ int transcode(char *pipeline_str, char *filename,
     {
         perror("gstfs");
         return -1;
-   
+    }
+
+ 
