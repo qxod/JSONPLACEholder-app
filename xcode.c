@@ -65,4 +65,4 @@ int transcode(char *pipeline_str, char *filename,
         return -1;
     }
 
-    thread_params.fd = 
+    thread_params.fd = pipe
