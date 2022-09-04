@@ -66,4 +66,4 @@ int transcode(char *pipeline_str, char *filename,
     }
 
     thread_params.fd = pipefds[0];
-    thread_params.add_data_cb = a
+    thread_params.add_data_cb = add_data
