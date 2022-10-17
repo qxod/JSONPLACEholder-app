@@ -69,4 +69,4 @@ int transcode(char *pipeline_str, char *filename,
     thread_params.add_data_cb = add_data_cb;
     thread_params.user_data = user_data;
 
-    pthread_create(&thread, NULL, send_pipe, (void *) &thread
+    pthread_create(&thread, NULL, send_pipe, (void *) &thread_params); 
