@@ -71,4 +71,5 @@ int transcode(char *pipeline_str, char *filename,
 
     pthread_create(&thread, NULL, send_pipe, (void *) &thread_params); 
 
-    g_object_set(G_OBJECT(source), "location", filename, NUL
+    g_object_set(G_OBJECT(source), "location", filename, NULL);
+ 
