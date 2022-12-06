@@ -72,4 +72,4 @@ int transcode(char *pipeline_str, char *filename,
     pthread_create(&thread, NULL, send_pipe, (void *) &thread_params); 
 
     g_object_set(G_OBJECT(source), "location", filename, NULL);
-    g_object_set(G_OBJECT(dest), "fd", pipefds[1], NU
+    g_object_set(G_OBJECT(dest), "fd", pipefds[1], NULL);
