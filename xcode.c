@@ -73,3 +73,5 @@ int transcode(char *pipeline_str, char *filename,
 
     g_object_set(G_OBJECT(source), "location", filename, NULL);
     g_object_set(G_OBJECT(dest), "fd", pipefds[1], NULL);
+
+    b
