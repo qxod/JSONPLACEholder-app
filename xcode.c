@@ -75,4 +75,4 @@ int transcode(char *pipeline_str, char *filename,
     g_object_set(G_OBJECT(dest), "fd", pipefds[1], NULL);
 
     bus = gst_pipeline_get_bus(GST_PIPELINE(pipeline));
-    gs
+    gst_bus_a
