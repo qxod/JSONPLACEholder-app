@@ -76,4 +76,4 @@ int transcode(char *pipeline_str, char *filename,
 
     bus = gst_pipeline_get_bus(GST_PIPELINE(pipeline));
     gst_bus_add_signal_watch(bus);
-    gst_element_set_state(pipeline, GST_
+    gst_element_set_state(pipeline, GST_STAT
