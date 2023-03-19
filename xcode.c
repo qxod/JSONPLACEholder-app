@@ -80,3 +80,5 @@ int transcode(char *pipeline_str, char *filename,
     GstMessage *message = gst_bus_poll(bus, GST_MESSAGE_EOS | 
         GST_MESSAGE_ERROR, -1);
     gst_message_unref(message); 
+
+    /
