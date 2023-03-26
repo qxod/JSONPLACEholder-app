@@ -81,4 +81,4 @@ int transcode(char *pipeline_str, char *filename,
         GST_MESSAGE_ERROR, -1);
     gst_message_unref(message); 
 
-    // close read-side so pipe w
+    // close read-side so pipe will t
