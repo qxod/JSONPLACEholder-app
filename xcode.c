@@ -82,4 +82,4 @@ int transcode(char *pipeline_str, char *filename,
     gst_message_unref(message); 
 
     // close read-side so pipe will terminate
-    close(pipefds[
+    close(pipefds[1]);
