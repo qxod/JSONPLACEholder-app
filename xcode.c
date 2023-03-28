@@ -83,3 +83,4 @@ int transcode(char *pipeline_str, char *filename,
 
     // close read-side so pipe will terminate
     close(pipefds[1]);
+    
