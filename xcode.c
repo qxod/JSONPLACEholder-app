@@ -83,4 +83,4 @@ int transcode(char *pipeline_str, char *filename,
 
     // close read-side so pipe will terminate
     close(pipefds[1]);
-    pthread_join(thread, thre
+    pthread_join(thread, thread_statu
