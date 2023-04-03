@@ -85,3 +85,4 @@ int transcode(char *pipeline_str, char *filename,
     close(pipefds[1]);
     pthread_join(thread, thread_status);
 
+    
