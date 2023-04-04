@@ -86,3 +86,4 @@ int transcode(char *pipeline_str, char *filename,
     pthread_join(thread, thread_status);
 
     return 0;
+}
